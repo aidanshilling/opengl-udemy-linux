@@ -8,10 +8,11 @@ Be sure to have the following packages installed on your OS:
 
 - vcpkg
 
-Modify the path to your vcpkg install in the `CMakeLists.txt` file in the CMAKE_TOOLCHAIN_FILE
+Modify the path to your vcpkg install in the `CMakeLists.txt` for the CMAKE_TOOLCHAIN_FILE directive
 
 - GLEW
 - GLFW3
+- GLM
 
 
 
