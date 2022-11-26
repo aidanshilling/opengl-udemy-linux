@@ -12,6 +12,7 @@ Modify the path to your vcpkg install in the `CMakeLists.txt` for the CMAKE_TOOL
 
 - GLEW
 - GLFW3
+- GLM
 
 
 
