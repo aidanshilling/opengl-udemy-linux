@@ -19,6 +19,8 @@ float triOffset = 0.0f;
 float triMaxOffset = 0.7f;
 float triIncrement = 0.0005f;
 
+float curAngle = 0.0f;
+
 // Shader code
 static const char *vshader =
 "                                                    \n\
@@ -192,6 +194,11 @@ int main() {
 			direction = !direction;
 		}
 
+		curAngle += 0.01f;
+		if (curAngle >= 360.0f) {
+			curAngle -= 360.0f;
+		}
+
 		// clear window
 		glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
@@ -199,8 +206,8 @@ int main() {
 		glUseProgram(shader);
 
 		glm::mat4 model(1.0f);
+		model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f)); 
-		model = glm::rotate(model, 45 * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
 
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
