@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/opengl-udemy.dir/src/main.cpp.o -o opengl-udemy  /home/aidan/vcpkg/installed/x64-linux/debug/lib/libGLEWd.a /home/aidan/vcpkg/installed/x64-linux/debug/lib/libglfw3.a -lGL -lSM -lICE -lXext -Wl,-Bstatic -lrt -Wl,-Bdynamic -lm -ldl -lX11 

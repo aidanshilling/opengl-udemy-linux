@@ -1,3 +1,0 @@
-/home/aidan/ghq/github.com/aidanshilling/opengl-udemy-linux/out/CMakeFiles/opengl-udemy.dir
-/home/aidan/ghq/github.com/aidanshilling/opengl-udemy-linux/out/CMakeFiles/edit_cache.dir
-/home/aidan/ghq/github.com/aidanshilling/opengl-udemy-linux/out/CMakeFiles/rebuild_cache.dir

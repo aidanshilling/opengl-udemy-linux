@@ -199,15 +199,16 @@ int main() {
 			curAngle -= 360.0f;
 		}
 
-		// clear window
+		// clear window 
 		glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glUseProgram(shader);
 
 		glm::mat4 model(1.0f);
-		model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
-		model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f)); 
+		// model = glm::rotate(model, curAngle * toRadians, glm::vec3(0.0f, 0.0f, 1.0f));
+		// model = glm::translate(model, glm::vec3(triOffset, 0.0f, 0.0f)); 
+		model = glm::scale(model, glm::vec3());
 
 		glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
